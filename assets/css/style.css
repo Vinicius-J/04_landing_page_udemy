@@ -1,0 +1,100 @@
+/* ESTILOS GERAIS */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+:root{
+    --color-white-main: #fff;
+    --color-white-sec: #ccc;
+
+    --color-black-main: #000;
+
+    ---primary-color: #0a1128;
+    --light-gray-color: #eee;
+
+    --padding-section: 3rem;
+}
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+html {font-size: 62.5%; }
+
+body {font-family: "Open Sans", sans-serif; font-size: 2rem;}
+
+h1, h1, h3, h4, h5, h6 {font-family: "Montserrat", sans-serif;}
+
+h1 {font-size: 6rem; text-transform: uppercase;}
+h2 {font-size: 5.5rem;}
+h3 {font-size: 5rem;}
+h4 {font-size: 4.5rem;}
+h5 {font-size: 4rem;}
+h6 {font-size: 3.5rem;}
+
+.bg-svg {background-image: url(../img/background_page.svg);background-size: cover; background-position: center center; color: var(--color-white-main);
+}
+
+.bg-white {background-color: var(--color-white-main); color: var(--color-black-main);
+}
+
+.viewport{
+    height: 100vh;
+    width: 100%;
+}
+
+.content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 var(--padding-section);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {text-decoration: none;}
+
+/* ESTILOS UNICOS */
+
+.main-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+}
+
+.main-menu .content h1 {
+    font-size: 2.3rem;
+    color: var(---primary-color);
+}
+
+.main-menu .content h1 a {
+    color: inherit;
+}
+
+.main-menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.main-menu ul li a {
+    display: block;
+    color: var(--color-black-main);
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.main-menu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(---primary-color);
+    bottom: 1.8rem;
+    left: 50%;
+    transition: all 250ms ease-in-out;
+}
+.main-menu ul li a:hover::after {
+    width: 70%;
+    left: 15%;
+}
