@@ -36,8 +36,30 @@ p{
 
 a {text-decoration: none;}
 
-.menu-spacing {
-    height: 6.5rem;}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    border: 0.1rem solid var(--light-gray-color);
+    text-align: left;
+    padding: 1rem;
+}
+
+tfoot td, tr th {
+    background-color: var(--light-gray-color);
+    /* white-space: nowrap; */
+}
+
+.menu-spacing {height: 6.5rem;}
 
 .bg-svg {background-image: url(../img/background_page.svg);background-size: cover; background-position: center center; color: var(--color-white-main);
 }
@@ -60,6 +82,18 @@ a {text-decoration: none;}
     max-width: 120rem;
     margin: 0 auto;
     padding: 0 var(--padding-section);
+}
+
+.section-heading {
+    margin-top: 8rem;
+}
+
+.section-description  {
+    padding-bottom: 6rem;
+}
+
+.responsive-table {
+    overflow-x: auto;
 }
 
 /* ESTILOS UNICOS */
@@ -148,7 +182,7 @@ a {text-decoration: none;}
 .top3 {
     max-width: 70rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
@@ -165,5 +199,50 @@ a {text-decoration: none;}
 
 .top3-jobs {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--padding-section);
+    counter-reset: number-grid;
+}
+
+.top3-jobs h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 4.5rem;
+    padding-bottom: 1rem;
+}
+
+.top3-jobs h3::before{
+    counter-increment: number-grid;
+    content: counter(number-grid);
+    position: absolute;
+    font-size: 6rem;
+    font-style: italic;
+    top: -2rem;
+    left: 0;
+    transform: rotate(5deg);
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--padding-section);
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+    box-shadow: 0 0 1rem var(---primary-color);
+    border-radius: 5px;
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }

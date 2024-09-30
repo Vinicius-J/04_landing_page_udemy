@@ -12,16 +12,17 @@
             <h1><a href="#">LOGO</a></h1>
             <nav>
                 <ul>
-                    <li><a href="#intro">INTRO</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#intro">SOBRE</a></li>
                     <li><a href="#top3">TOP 3</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">WORK</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#pricing">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </aside>
-    <div class="menu-spacing"></div>
+    <div id="home" class="menu-spacing"></div>
     <section class="bg-svg viewport container">
         <div class="intro-content content">
             <div class="intro-text">
@@ -47,13 +48,114 @@
     <section id="top3" class="bg-svg viewport container">
         <div class="top3-gallery-content content">
             <div class="top3-text">
-                <h2>Top 3 Jobs</h2>
-                <p>Aqui estão alguns do trabalhos mais recentes</p>
+                <h2 class="section-heading">Top 3 Jobs</h2>
+                <p class="section-description">Aqui estão alguns do trabalhos mais recentes</p>
             </div>
             <div class="top3-jobs">
-                <p id="1">This button would add a box to the row of key content boxes below the intro text. This should put the box there regardless of where the user is currently writing.</p>
-                <p id="2">I'd suggest having a popup that asks where in the row to insert the box (at the beginning or end), what title to give the box, what text to put in the box, and where the box should link to. The entire box should serve as a link to the destination page.</p>
-                <p id="3">You can also include a type attribute containing the MIME type of the resource, so a browser can quickly see what resources are on offer, and ignore ones that it doesn’t support</p>
+                <article>
+                    <h3>First</h3>
+                    <p>This button would add a box to the row of key content boxes below the intro text. This should put the box there regardless of where the user is currently writing.</p>
+                </article>
+                <article>
+                    <h3> Another Site</h3>
+                    <p>I'd suggest having a popup that asks where in the row to insert the box (at the beginning or end), what title to give the box, what text to put in the box, and where the box should link to. The entire box should serve as a link to the destination page.</p>
+                </article>
+                <article>
+                    <h3> Third one</h3>
+                    <p>You can also include a type attribute containing the MIME type of the resource, so a browser can quickly see what resources are on offer, and ignore ones that it doesn’t support</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="bg-white viewport container">
+        <div class="gallery-content content">
+            <div class="gallery-text">
+                <h2 class="section-heading">Gallery</h2>
+                <p class="section-description">Aqui estão algumas das minhas fotos</p>
+            </div>
+            <div class="gallery">
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=1" alt="random image from lorem picsum">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=2" alt="random image from lorem picsum">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=3" alt="random image from lorem picsum">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=4" alt="random image from lorem picsum">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=5" alt="random image from lorem picsum">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=6" alt="random image from lorem picsum">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="bg-svg viewport container">
+        <div class="top3-gallery-content content">
+            <div class="top3-text">
+                <h2 class="section-heading">Top 3 Jobs</h2>
+                <p class="section-description">Aqui estão alguns do trabalhos mais recentes</p>
+            </div>
+            <div class="top3-jobs">
+                <article>
+                    <h3>First</h3>
+                    <p>This button would add a box to the row of key content boxes below the intro text. This should put the box there regardless of where the user is currently writing.</p>
+                </article>
+                <article>
+                    <h3> Another Site</h3>
+                    <p>I'd suggest having a popup that asks where in the row to insert the box (at the beginning or end), what title to give the box, what text to put in the box, and where the box should link to. The entire box should serve as a link to the destination page.</p>
+                </article>
+                <article>
+                    <h3> Third one</h3>
+                    <p>You can also include a type attribute containing the MIME type of the resource, so a browser can quickly see what resources are on offer, and ignore ones that it doesn’t support</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="bg-white viewport container">
+        <div class="pricing-content content">
+            <div class="pricing">
+                <h2 class="section-heading">PRICING</h2>
+                <p class="section-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati delectus, asperiores earum natus optio aliquid iusto rerum cupiditate nesciunt veritatis iste dolore voluptatum vitae, assumenda id mollitia maiores alias repellat!</p>
+                <div class="responsive-table">
+                    <table>
+                        <caption>Princing Table</caption>
+                        <tr>
+                            <th>Title 1</th>
+                            <th>Title 2</th>
+                            <th>Title 3</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                            </tr>
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                            </tr>
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Testando</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
