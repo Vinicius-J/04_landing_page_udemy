@@ -162,8 +162,6 @@ tfoot td, tr th {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: var(--padding-section);
-    position: relative;
-    top: -6.5rem;
     align-items: center;
     justify-content: center;
 }
@@ -336,6 +334,78 @@ div.full-width {
 
 .footer a {
     color: inherit;
+}
+
+.close-menu{
+    display: none;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--color-white-sec);
+    color: var(---primary-color);
+    border-radius: 50%;
+    border: solid 0.1rem var(--color-black-main);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.back-to-top:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 800px){
+    .menu-spacing{
+        display: none;
+    }
+    .intro-content,
+    .top3-jobs,
+    .contact{
+        grid-template-columns: 1fr;
+        top: 6.5rem;
+    }
+    .main-menu-content{
+        height: 100vh;
+    }
+    .main-menu-content, .main-menu-content ul {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .main-menu{
+        display: none;
+    }
+    .close-menu-label::after{
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background-color: var(---primary-color);
+        border-radius: 0.5rem;
+        color: var(--color-white-main);
+        font-size: 2rem;
+        cursor: pointer;
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+        align-content: center;
+    }
+
+    .close-menu:checked~.main-menu{
+        display: block;
+    }
+    .close-menu:checked~.close-menu-label::after{
+        content: '×';
+        font-size: 3.2rem;
+        line-height: 1.5rem;
+    }
 }
 
 

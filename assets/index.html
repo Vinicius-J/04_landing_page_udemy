@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="main-menu bg-white">
         <div class=" main-menu-content content">
             <h1><a href="#">LOGO</a></h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#intro">SOBRE</a></li>
                     <li><a href="#top3">TOP 3</a></li>
@@ -199,5 +201,6 @@
     <footer class="footer bg-white">
         <p><a href="#">Feito por Vinícius Joaquim dos Santos</a><br>Copyright (c) 2024 Vinícius Joaquim</p>
     </footer>
+    <a href="#home" class="back-to-top">⮝</a>
 </body>
 </html>
