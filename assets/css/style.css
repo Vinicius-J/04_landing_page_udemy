@@ -1,6 +1,8 @@
 /* ESTILOS GERAIS */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+/* font-family: "M PLUS 1 Code", monospace; */
 
 :root{
     --color-white-main: #fff;
@@ -23,7 +25,7 @@ body {font-family: "Poppins", sans-serif; font-size: 2rem;}
 h1, h2, h3, h4, h5, h6 {font-family: "Montserrat", sans-serif;}
 
 h1 {font-size: 6rem; text-transform: uppercase; }
-h2 {font-size: 5.5rem; font-size: 5rem; margin-bottom: 3rem;text-transform: uppercase;}
+h2 {font-size: 4rem; margin-bottom: 3rem;text-transform: uppercase;}
 h3 {font-size: 5rem;}
 h4 {font-size: 4.5rem;}
 h5 {font-size: 4rem;}
@@ -34,7 +36,7 @@ p{
     line-height: 1.5;
 }
 
-a {text-decoration: none;}
+a {text-decoration: none; color: var(--color-white-sec);}
 
 table {
     width: 100%;
@@ -59,7 +61,7 @@ tfoot td, tr th {
     /* white-space: nowrap; */
 }
 
-.menu-spacing {height: 6.5rem;}
+.menu-spacing {height: 5.5rem;}
 
 .bg-svg {background-image: url(../img/background_page.svg);background-size: cover; background-position: center center; color: var(--color-white-main);
 }
@@ -134,11 +136,15 @@ tfoot td, tr th {
     display: flex;
 }
 
+.main-menu ul li {
+    margin-right: 2.5rem;
+}
+
 .main-menu ul li a {
     display: block;
     color: var(--color-black-main);
-    padding: 2rem;
-    font-size: 1.8rem;
+    padding: 1.5rem;
+    font-size: 1.6rem;
     position: relative;
 }
 
@@ -148,7 +154,7 @@ tfoot td, tr th {
     width: 0;
     height: 0.2rem;
     background-color: var(---primary-color);
-    bottom: 2rem;
+    bottom: 1.7rem;
     left: 50%;
     transition: all 250ms ease-in-out;
 }
@@ -166,9 +172,47 @@ tfoot td, tr th {
     justify-content: center;
 }
 
+.intro-content .intro-text h4 {
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    position: relative;
+}
+
+.intro-content .intro-text a {
+    color: var(--color-white-main);
+}
+
+.intro-content .intro-text a::after {
+    content: '';
+    position: absolute;
+    height: 0.2rem;
+    width: 0;
+    top: 1.8rem;
+    left: 22%;
+    background-color: var(--color-white-main);
+    transition: all 250ms ease-in-out;
+}
+
+.intro-content .intro-text a:hover::after{
+    width: 43%;
+    left: 0;
+}
+
+.intro-content .intro-text h2 {
+    font-size: 3.5rem;
+    text-transform: none;
+}
+
+.intro-content .intro-text .name{
+    -webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1px #fff;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
 .intro-content .intro-text p{
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
 }
 
